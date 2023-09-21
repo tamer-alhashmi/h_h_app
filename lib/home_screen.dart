@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Container(
         margin: const EdgeInsets.only(top: 10, right: 10, left: 10),
         child: GridView.count(
+          physics: const BouncingScrollPhysics(),
           crossAxisSpacing: 3,
           mainAxisSpacing: 3,
           crossAxisCount: 3,
